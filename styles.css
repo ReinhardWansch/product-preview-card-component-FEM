@@ -13,6 +13,7 @@
     --color-white: hsl(0, 0%, 100%);
 
     --border-radius-card: 0.7rem;
+    --border-radius-button: 0.5rem;
 }
 
 /*###########*/
@@ -105,6 +106,10 @@ body {
 }
 
 #addToCart {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: var(--border-radius-button);
     border: 0;
     background-color: var(--color-green-500);
     padding-block: 1rem;
