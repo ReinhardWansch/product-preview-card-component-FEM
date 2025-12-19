@@ -1,3 +1,5 @@
+@import url('fonts.css');
+
 /*##########*/
 /*## VARS ##*/
 /*##########*/
@@ -28,12 +30,17 @@ img {
 }
 
 /*############*/
-/*## MOBILE ##*/
+/*## GLOBAL ##*/
 /*############*/
 
 body {
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--color-cream);
 }
+
+/*############*/
+/*## MOBILE ##*/
+/*############*/
 
 #pageCtn {
     min-height: 100vh;
@@ -62,12 +69,17 @@ body {
     display: none;
 }
 
-@media (width > 576px) {}
-
 #rightCol {
     border-bottom-left-radius: var(--border-radius-card);
     border-bottom-right-radius: var(--border-radius-card);
     background-color: var(--color-white);
+}
+
+#priceReduced {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-green-700);
 }
 
 
