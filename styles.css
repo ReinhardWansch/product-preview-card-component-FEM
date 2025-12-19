@@ -37,6 +37,7 @@ img {
 body {
     background-color: var(--color-cream);
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
     color: var(--color-grey);
 }
 
@@ -74,7 +75,7 @@ body {
 #rightCol {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.6rem;
     border-bottom-left-radius: var(--border-radius-card);
     border-bottom-right-radius: var(--border-radius-card);
     background-color: var(--color-white);
@@ -85,7 +86,12 @@ body {
     color: var(--color-black);
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+}
+
+#productDescription {
+    line-height: 1.5rem;
 }
 
 #priceTag {
@@ -116,6 +122,10 @@ body {
     color: white;
 }
 
+#addToCart:hover {
+    background-color: var(--color-green-700);
+    cursor: pointer;
+}
 
 /*#############*/
 /*## DESKTOP ##*/
@@ -129,7 +139,7 @@ body {
     }
 
     #cardCtn {
-        width: 500px;
+        width: 560px;
         /* max-height: 350px; */
         flex-direction: row;
     }
