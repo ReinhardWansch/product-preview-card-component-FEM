@@ -71,9 +71,13 @@ body {
 }
 
 #rightCol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     border-bottom-left-radius: var(--border-radius-card);
     border-bottom-right-radius: var(--border-radius-card);
     background-color: var(--color-white);
+    padding: 2rem;
 }
 
 #productTitle {
@@ -83,11 +87,28 @@ body {
     font-size: 1.5rem;
 }
 
+#priceTag {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
 #priceReduced {
     font-family: 'Fraunces', serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--color-green-700);
+}
+
+#priceRegular {
+    text-decoration: line-through;
+}
+
+#addToCart {
+    border: 0;
+    background-color: var(--color-green-500);
+    padding-block: 1rem;
+    color: white;
 }
 
 
