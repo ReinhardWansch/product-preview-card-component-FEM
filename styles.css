@@ -1,3 +1,18 @@
+/*##########*/
+/*## VARS ##*/
+/*##########*/
+
+:root {
+    --color-green-500: hsl(158, 36%, 37%);
+    --color-green-700: hsl(158, 42%, 18%);
+    --color-black: hsl(212, 21%, 14%);
+    --color-grey: hsl(228, 12%, 48%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-white: hsl(0, 0%, 100%);
+
+    --border-radius-card: 0.7rem;
+}
+
 /*###########*/
 /*## RESET ##*/
 /*###########*/
@@ -16,6 +31,10 @@ img {
 /*## MOBILE ##*/
 /*############*/
 
+body {
+    background-color: var(--color-cream);
+}
+
 #pageCtn {
     min-height: 100vh;
     width: 100%;
@@ -28,13 +47,15 @@ img {
     flex-direction: column;
 }
 
-#leftCol {
-    background-color: lightcoral;
-}
-
 #cardImgMobile,
 #cardImgDesktop {
     width: 100%;
+}
+
+#leftCol,
+#cardImgMobile {
+    border-top-left-radius: var(--border-radius-card);
+    border-top-right-radius: var(--border-radius-card);
 }
 
 #cardImgDesktop {
@@ -44,6 +65,8 @@ img {
 @media (width > 576px) {}
 
 #rightCol {
+    border-bottom-left-radius: var(--border-radius-card);
+    border-bottom-right-radius: var(--border-radius-card);
     background-color: lightgreen;
 }
 
@@ -67,8 +90,13 @@ img {
 
     #leftCol,
     #rightCol {
-        /* flex-basis: 50%; */
         flex: 0 0 50%;
+    }
+
+    #rightCol {
+        border-radius: unset;
+        border-top-right-radius: var(--border-radius-card);
+        border-bottom-right-radius: var(--border-radius-card);
     }
 
     #cardImgMobile {
@@ -78,7 +106,8 @@ img {
     #cardImgDesktop {
         display: block;
         height: 100%;
-        /* width: 100%; */
+        border-top-left-radius: var(--border-radius-card);
+        border-bottom-left-radius: var(--border-radius-card);
         object-fit: cover;
     }
 }
