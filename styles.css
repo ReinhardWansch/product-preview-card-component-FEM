@@ -34,8 +34,9 @@ img {
 /*############*/
 
 body {
-    font-family: 'Montserrat', sans-serif;
     background-color: var(--color-cream);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-grey);
 }
 
 /*############*/
@@ -73,6 +74,13 @@ body {
     border-bottom-left-radius: var(--border-radius-card);
     border-bottom-right-radius: var(--border-radius-card);
     background-color: var(--color-white);
+}
+
+#productTitle {
+    color: var(--color-black);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 #priceReduced {
