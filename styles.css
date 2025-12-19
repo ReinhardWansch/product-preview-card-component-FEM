@@ -67,7 +67,7 @@ body {
 #rightCol {
     border-bottom-left-radius: var(--border-radius-card);
     border-bottom-right-radius: var(--border-radius-card);
-    background-color: lightgreen;
+    background-color: var(--color-white);
 }
 
 
