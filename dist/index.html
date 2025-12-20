@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="./styles.css">
   <style>
     .attribution {
       font-size: 11px;
       text-align: center;
     }
-
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
@@ -20,11 +20,11 @@
 
 <body>
 
-  <div id="pageCtn">
+  <div id="pageCtn" class="h-screen w-screen flex items-center justify-center bg-gray-100">
     <div id="cardCtn">
       <div id="leftCol">
-        <img id="cardImgMobile" src="./images/image-product-mobile.jpg" alt="parfume bottle">
-        <img id="cardImgDesktop" src="./images/image-product-desktop.jpg" alt="parfume bottle">
+        <img id="cardImgMobile" class="md:hidden" src="./images/image-product-mobile.jpg" alt="parfume bottle">
+        <img id="cardImgDesktop" class="hidden md:block" src="./images/image-product-desktop.jpg" alt="parfume bottle">
       </div>
       <div id="rightCol">
         <p id="categoryTag">PERFUME</p>
