@@ -17,5 +17,4 @@
 
 node_modules/
 playground/
-dist/*
-!dist/index.html
+dist/styles.css
