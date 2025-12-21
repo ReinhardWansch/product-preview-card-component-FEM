@@ -19,3 +19,7 @@
 @theme {
     --text-attribution: 11px;
 }
+
+.attribution {
+    font-size: 11px;
+}
