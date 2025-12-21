@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="font-montserrat p-t-5 bg-cream text-grey text-sm">
+
+  <div id="pageCtn" class="min-h-screen w-full flex items-center justify-center py-4 px-2">
+    <div id="cardCtn" class="flex flex-col">
+      <div id="leftCol" class="rounded-t-2xl">
+        <img id="cardImgMobile" class="md:hidden w-full rounded-t-2xl" src="./images/image-product-mobile.jpg" alt="parfume bottle">
+        <img id="cardImgDesktop" class="hidden md:block" src="./images/image-product-desktop.jpg" alt="parfume bottle">
+      </div>
+      <div id="rightCol" class="flex bg-white flex-col gap-4 p-6 rounded-b-2xl">
+        <p id="categoryTag">PERFUME</p>
+        <h1 id="productTitle" class="font-fraunces text-3xl font-bold text-black leading-7">Gabrielle Essence Eau De Parfum</h1>
+        <p id="productDescription" class="text leading-5">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div id="priceTag" class="flex items-center gap-3.5">
+          <span id="priceReduced" class="font-fraunces font-bold text-2xl text-green-700">$149.99</span>
+          <span id="priceRegular" class="line-through">$169.99</span>
+        </div>
+        <button id="addToCart" class="flex items-center justify-center gap-3 bg-green-700 hover:bg-green-900 text-white font-bold py-3 rounded-lg">
+          <img src="./images/icon-cart.svg" alt="cart icon">
+          <span>Add to Cart</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-attribution text-center mt-6">
+    Challenge by <a class="text-indigo-600" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="text-indigo-600" href="https://www.frontendmentor.io/profile/ReinhardWansch">Reinhard Wansch</a>.
+  </div>
+</body>
+
+</html>
