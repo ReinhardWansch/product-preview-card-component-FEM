@@ -15,3 +15,7 @@
     --color-cream: hsl(30, 38%, 92%);
     --color-white: hsl(0, 0%, 100%);
 }
+
+@theme {
+    --text-attribution: 11px;
+}
