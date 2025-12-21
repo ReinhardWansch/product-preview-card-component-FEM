@@ -10,6 +10,6 @@
   },
   "scripts": {
     "build": "postcss src/css/main.css -o dist/styles.css",
-    "watch": "postcss src/css/main.css -o dist/styles.css --watch"
+    "dev": "postcss src/css/main.css -o dist/styles.css --watch"
   }
 }

@@ -7,26 +7,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="stylesheet" href="./styles.css">
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body class="font-montserrat p-t-5 bg-cream text-grey text-sm">
 
-  <div id="pageCtn" class="min-h-screen w-full flex items-center justify-center py-4 px-2">
-    <div id="cardCtn" class="flex flex-col">
-      <div id="leftCol" class="rounded-t-2xl">
+  <div id="pageCtn" class="min-h-screen w-full md:flex md:items-center md:justify-center py-4 px-2">
+    <div id="cardCtn" class="flex flex-col md:w-[540px] md:flex-row">
+      <div id="leftCol" class="basis-[50%] grow-[0] shrink-[0] rounded-t-2xl">
         <img id="cardImgMobile" class="md:hidden w-full rounded-t-2xl" src="./images/image-product-mobile.jpg" alt="parfume bottle">
-        <img id="cardImgDesktop" class="hidden md:block" src="./images/image-product-desktop.jpg" alt="parfume bottle">
+        <img id="cardImgDesktop" class="hidden md:block h-full rounded-l-2xl object-cover" src="./images/image-product-desktop.jpg" alt="parfume bottle">
       </div>
-      <div id="rightCol" class="flex bg-white flex-col gap-4 p-6 rounded-b-2xl">
+      <div id="rightCol" class="flex basis-[50%] grow-[0] shrink-[0] bg-white flex-col gap-4 p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none">
         <p id="categoryTag">PERFUME</p>
         <h1 id="productTitle" class="font-fraunces text-3xl font-bold text-black leading-7">Gabrielle Essence Eau De Parfum</h1>
         <p id="productDescription" class="text leading-5">
@@ -45,7 +36,7 @@
     </div>
   </div>
 
-  <div class="text-attribution text-center mt-6">
+  <div class="text-attribution text-center mt-6 md:mt-0 md:fixed md:bottom-0 md:w-full">
     Challenge by <a class="text-indigo-600" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a class="text-indigo-600" href="https://www.frontendmentor.io/profile/ReinhardWansch">Reinhard Wansch</a>.
   </div>
