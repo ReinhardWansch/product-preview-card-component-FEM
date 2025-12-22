@@ -13,24 +13,21 @@ I used TailwindCSS with postcss.
 ## Links
 
 - Solution URL: [Frontend Mentor]()
-- Live Site URL: [github pages]()
+- Live Site URL: [github pages](https://reinhardwansch.github.io/product-preview-card-component-FEM/)
 
 ## Built with
 
-- Bootstrap
-- SASS
+- TailwindCSS
+- postcss
 
 ## What I learned
 
-- How to use the SASS-CLI
-- How to use npm-scripts
-- There is a pseudo-class called `:last-child`
+PostCSS does not perform CSS transformations itself. It merely coordinates various plugins that take on this task.
 
 ## Useful resources
 
-- [mdn](https://developer.mozilla.org/de/)
-- [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [SASS](https://sass-lang.com/)
+- [TailwindCSS](https://tailwindcss.com/docs/installation/using-postcss)
+- [postcss](https://postcss.org/)
 
 ## Author
 
