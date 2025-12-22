@@ -12,7 +12,7 @@ I used TailwindCSS with postcss.
 
 ## Links
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-DJfUroqIAG)
 - Live Site URL: [github pages](https://reinhardwansch.github.io/product-preview-card-component-FEM/)
 
 ## Built with
